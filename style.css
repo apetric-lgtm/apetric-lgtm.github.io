@@ -84,3 +84,12 @@ footer a { color: var(--muted); }
 .prose h1 { letter-spacing: -0.02em; }
 .prose h2 { font-size: 21px; margin-top: 36px; }
 .prose p, .prose li { color: var(--text); }
+
+.plan { position: relative; display: flex; flex-direction: column; }
+.plan .amount { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin: 4px 0 10px; }
+.plan .amount small { font-size: 16px; font-weight: 500; color: var(--muted); }
+.plan ul { margin: 14px 0 0; padding-left: 20px; color: var(--muted); }
+.plan li { margin: 4px 0; }
+.plan.featured { border: 2px solid var(--accent); }
+.plan .badge { position: absolute; top: -12px; left: 20px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.note { color: var(--muted); margin: 28px 0 0; }
