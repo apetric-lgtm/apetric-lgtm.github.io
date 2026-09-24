@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Kovač — autoservis, Zagreb (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap" rel="stylesheet">
+<style>
+.demo-bar{background:#111;color:#eee;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 12px}.demo-bar a{color:#9bb8ff}
+*{box-sizing:border-box}body{margin:0;background:#15171b;color:#e9eaec;font:16px/1.6 Archivo,system-ui,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:.02em}.brand b{color:#ffcc00}
+.hero{padding:56px 0 72px;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,204,0,.04) 22px 44px)}
+.hero h1{font-size:clamp(40px,8vw,84px);line-height:.95;text-transform:uppercase;font-weight:800;margin:0 0 20px;letter-spacing:-.02em}
+.hero h1 span{color:#ffcc00}
+.hero p{color:#aeb3bb;font-size:19px;max-width:44ch}
+.cta{display:inline-flex;gap:10px;align-items:center;background:#ffcc00;color:#15171b;font-weight:800;text-decoration:none;padding:16px 26px;border-radius:6px;margin-top:16px;text-transform:uppercase}
+section{padding:64px 0;border-top:1px solid #2a2d33}
+h2{text-transform:uppercase;font-size:30px;margin:0 0 28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#1d2025;border:1px solid #2a2d33;border-left:4px solid #ffcc00;padding:22px;border-radius:6px}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:#aeb3bb}
+.stats{display:flex;flex-wrap:wrap;gap:40px}.stats div{font-size:15px;color:#aeb3bb}.stats b{display:block;font-size:44px;color:#ffcc00;line-height:1}
+.sticky{position:fixed;left:16px;right:16px;bottom:16px;display:none;text-align:center}
+@media(max-width:640px){.sticky{display:block}.sticky .cta{width:100%;justify-content:center}body{padding-bottom:90px}}
+footer{padding:32px 0;color:#7b8089;font-size:14px;border-top:1px solid #2a2d33}
+</style>
+</head>
+<body>
+<div class="demo-bar">Demo stranica za izmišljenu tvrtku · izradio <a href="../../">Petrić Web Studio</a></div>
+<div class="wrap"><header><div class="brand">Auto <b>Kovač</b></div><span style="color:#aeb3bb">Pon–pet 7–17 · Sub 8–12</span></header></div>
+<div class="hero"><div class="wrap">
+  <h1>Servis bez<br><span>čekanja.</span></h1>
+  <p>Mali servis, redovno održavanje i dijagnostika za sve marke. Termin isti ili idući dan, cijena dogovorena prije rada.</p>
+  <a class="cta" href="tel:+38510000000">📞 Zovi odmah</a>
+</div></div>
+<section><div class="wrap">
+  <h2>Usluge</h2>
+  <div class="grid">
+    <div class="card"><h3>Mali i veliki servis</h3><p>Ulje, filteri, remen — po preporuci proizvođača.</p></div>
+    <div class="card"><h3>Dijagnostika</h3><p>Računalna dijagnostika i čitanje grešaka za sve marke.</p></div>
+    <div class="card"><h3>Kočnice i ovjes</h3><p>Pločice, diskovi, amortizeri, geometrija.</p></div>
+    <div class="card"><h3>Priprema za tehnički</h3><p>Provjerimo sve prije pregleda da prođete iz prve.</p></div>
+  </div>
+</div></section>
+<section><div class="wrap stats">
+  <div><b>25+</b>godina iskustva</div><div><b>4,9★</b>ocjena na Googleu</div><div><b>24 h</b>do termina</div>
+</div></section>
+<footer><div class="wrap">Auto Kovač · Radnička cesta 1, Zagreb · 01 000 0000 · demo stranica</div></footer>
+<div class="sticky"><a class="cta" href="tel:+38510000000">📞 Zovi odmah</a></div>
+</body>
+</html>

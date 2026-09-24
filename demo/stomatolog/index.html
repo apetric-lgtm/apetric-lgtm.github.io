@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentalna ordinacija Smile — Zagreb (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.demo-bar{background:#111;color:#eee;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 12px}.demo-bar a{color:#9bb8ff}
+*{box-sizing:border-box}body{margin:0;background:#f5fbfb;color:#123b39;font:16px/1.65 "Nunito Sans",system-ui,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{font-weight:800;font-size:20px}.brand span{color:#1c9a92}
+.btn{display:inline-block;background:#1c9a92;color:#fff;text-decoration:none;padding:13px 24px;border-radius:12px;font-weight:600}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:40px 0 72px}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}
+.hero p{font-size:18px;color:#4a6d6a;max-width:42ch}
+.blob{aspect-ratio:1;border-radius:42% 58% 55% 45%/48% 42% 58% 52%;background:radial-gradient(circle at 35% 35%,#ffffff 0 14%,transparent 15%),linear-gradient(145deg,#bfe7e4,#6cc3bc)}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.blob{max-width:300px}}
+section{padding:64px 0}
+section.alt{background:#fff}
+h2{font-size:32px;margin:0 0 28px;font-weight:800}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#f5fbfb;border-radius:18px;padding:24px}
+section.alt .card{background:#eef8f7}
+.card h3{margin:0 0 6px}.card p{margin:0;color:#4a6d6a}
+form{display:grid;gap:12px;max-width:520px}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid #bcdcd9;border-radius:10px;background:#fff;color:#123b39}
+footer{padding:32px 0;color:#5f807d;font-size:14px}
+</style>
+</head>
+<body>
+<div class="demo-bar">Demo stranica za izmišljenu tvrtku · izradio <a href="../../">Petrić Web Studio</a></div>
+<div class="wrap">
+<header><div class="brand">Smile<span>.</span> dentalna ordinacija</div><a class="btn" href="#termin">Upit za termin</a></header>
+<div class="hero">
+  <div>
+    <h1>Opušten posjet stomatologu. Da, stvarno.</h1>
+    <p>Preventiva, estetika i implantati uz nježan pristup i jasne cijene. Novi pacijenti dobivaju termin unutar tjedan dana.</p>
+    <a class="btn" href="#termin">Zatražite termin</a>
+  </div>
+  <div class="blob" role="img" aria-label="Ilustracija"></div>
+</div>
+</div>
+<section class="alt"><div class="wrap">
+  <h2>Tretmani</h2>
+  <div class="grid">
+    <div class="card"><h3>Pregled i čišćenje</h3><p>Detaljan pregled, uklanjanje kamenca i poliranje.</p></div>
+    <div class="card"><h3>Izbjeljivanje</h3><p>Sigurno izbjeljivanje u ordinaciji ili kod kuće.</p></div>
+    <div class="card"><h3>Implantati</h3><p>Od konzultacija do krunice, s planom i cijenom unaprijed.</p></div>
+    <div class="card"><h3>Dječja stomatologija</h3><p>Prvi posjet bez straha — polako i uz igru.</p></div>
+  </div>
+</div></section>
+<section id="termin"><div class="wrap">
+  <h2>Upit za termin</h2>
+  <form onsubmit="event.preventDefault();this.innerHTML='<p><b>Hvala!</b> Ovo je demo — u pravoj stranici upit bi stigao ordinaciji.</p>'">
+    <input placeholder="Ime i prezime" required>
+    <input type="tel" placeholder="Telefon" required>
+    <select><option>Pregled i čišćenje</option><option>Izbjeljivanje</option><option>Implantati</option><option>Drugo</option></select>
+    <textarea rows="3" placeholder="Poruka (neobavezno)"></textarea>
+    <button class="btn" style="border:0;cursor:pointer">Pošalji upit</button>
+  </form>
+</div></section>
+<footer><div class="wrap">Smile dentalna ordinacija · Vukovarska 1, Zagreb · demo stranica</div></footer>
+</body>
+</html>

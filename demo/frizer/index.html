@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon Lana — frizerski salon, Zagreb (demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+.demo-bar{background:#111;color:#eee;font:13px/1.4 system-ui,sans-serif;text-align:center;padding:8px 12px}.demo-bar a{color:#9bb8ff}
+*{box-sizing:border-box}body{margin:0;background:#faf6f2;color:#2b211c;font:16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spacing:-.01em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:600}
+.call{background:#2b211c;color:#faf6f2;text-decoration:none;padding:10px 18px;border-radius:999px;font-size:14px}
+.hero{display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:center;padding:40px 0 80px}
+.hero h1{font-size:clamp(42px,7vw,72px);line-height:1;margin:0 0 20px}
+.hero p{color:#6b5a50;font-size:18px;max-width:38ch}
+.photo{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,#e9d8cc 0%,#c9a28d 55%,#8c6450 100%);position:relative;overflow:hidden}
+.photo::after{content:"";position:absolute;inset:18% 22% 0;border-radius:140px 140px 0 0;background:radial-gradient(circle at 50% 30%,#f3e6dc 0 18%,transparent 19%),linear-gradient(#a57a64,#6f4c3c);opacity:.55}
+.btn{display:inline-block;background:#b3806a;color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;margin-top:12px;font-weight:500}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.photo{max-width:340px}}
+section{padding:64px 0;border-top:1px solid #eadfd6}
+h2{font-size:40px;margin:0 0 28px}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px 48px}
+.row{display:flex;justify-content:space-between;border-bottom:1px dotted #d2c1b5;padding:12px 0}
+.row span:last-child{font-weight:500}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.info h3{font-size:24px;margin:0 0 6px}.info p{margin:0;color:#6b5a50}
+footer{padding:32px 0;color:#8a776b;font-size:14px;border-top:1px solid #eadfd6}
+</style>
+</head>
+<body>
+<div class="demo-bar">Demo stranica za izmišljenu tvrtku · izradio <a href="../../">Petrić Web Studio</a></div>
+<div class="wrap">
+<header><div class="brand">Salon Lana</div><a class="call" href="tel:+38510000000">Nazovite</a></header>
+<div class="hero">
+  <div>
+    <h1>Kosa kakvu ste oduvijek željeli.</h1>
+    <p>Šišanje, bojanje i njega kose u mirnom salonu u centru Zagreba. Bez žurbe, uz kavu i savjet koji vam stvarno odgovara.</p>
+    <a class="btn" href="tel:+38510000000">Rezervirajte termin</a>
+  </div>
+  <div class="photo" role="img" aria-label="Ilustracija salona"></div>
+</div>
+</div>
+<section><div class="wrap">
+  <h2>Cjenik</h2>
+  <div class="price">
+    <div class="row"><span>Žensko šišanje i feniranje</span><span>od 30 €</span></div>
+    <div class="row"><span>Muško šišanje</span><span>18 €</span></div>
+    <div class="row"><span>Bojanje (kratka kosa)</span><span>od 45 €</span></div>
+    <div class="row"><span>Pramenovi / balayage</span><span>od 80 €</span></div>
+    <div class="row"><span>Tretman njege</span><span>20 €</span></div>
+    <div class="row"><span>Svečana frizura</span><span>od 40 €</span></div>
+  </div>
+</div></section>
+<section><div class="wrap info">
+  <div><h3>Adresa</h3><p>Ilica 1, 10000 Zagreb</p></div>
+  <div><h3>Radno vrijeme</h3><p>Pon–pet 9–20 h<br>Sub 8–14 h</p></div>
+  <div><h3>Kontakt</h3><p>01 000 0000<br>info@salon-lana.hr</p></div>
+</div></section>
+<footer><div class="wrap">© Salon Lana · demo stranica</div></footer>
+</body>
+</html>
